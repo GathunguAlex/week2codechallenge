@@ -7,6 +7,14 @@ function BotsPage() {
  const [bots, setBots] = useState([]);
  const [botArmy, setBotArmy] = useState([]);
 
+ useEffect(() => {
+  fetch("http://localhost:8002/bots")
+   .then(response => response.json())
+  .then(bots =>setBots(bots))
+ }, []);
+
+ 
+
   return (
     <div>
       <YourBotArmy />
