@@ -5,6 +5,7 @@ import BotCollection from "./BotCollection";
 function BotsPage() {
   //start here with your code for step one
  const [bots, setBots] = useState([]);
+ const [botArmy, setBotArmy] = useState([]);
 
   return (
     <div>
